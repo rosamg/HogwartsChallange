@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "e854e7b9-f134-434c-a410-4073627b45b4",
+		"name": "Hogwarts.API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/Candidate",
+			"item": [
+				{
+					"name": "/api/Candidate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Candidate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Candidate"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Candidate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Candidate"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/api/Candidate/SendCandidate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"candidateId\": -83836751,\n    \"name\": \"velit sunt Lorem aliquip aliqua\",\n    \"lastname\": \"laborum exercitation\",\n    \"identificationNumber\": 60012975,\n    \"age\": 888474,\n    \"houseType\": \"in velit\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Candidate/SendCandidate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Candidate",
+								"SendCandidate"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"candidateId\": -83836751,\n    \"name\": \"velit sunt Lorem aliquip aliqua\",\n    \"lastname\": \"laborum exercitation\",\n    \"identificationNumber\": 60012975,\n    \"age\": 888474,\n    \"houseType\": \"in velit\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Candidate/SendCandidate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Candidate",
+										"SendCandidate"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/api/Candidate/UpdateCandidate/:candidateId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"candidateId\": -83836751,\n    \"name\": \"velit sunt Lorem aliquip aliqua\",\n    \"lastname\": \"laborum exercitation\",\n    \"identificationNumber\": 60012975,\n    \"age\": 888474,\n    \"houseType\": \"in velit\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Candidate/UpdateCandidate/:candidateId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Candidate",
+								"UpdateCandidate",
+								":candidateId"
+							],
+							"variable": [
+								{
+									"key": "candidateId",
+									"value": "99956971",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"candidateId\": -83836751,\n    \"name\": \"velit sunt Lorem aliquip aliqua\",\n    \"lastname\": \"laborum exercitation\",\n    \"identificationNumber\": 60012975,\n    \"age\": 888474,\n    \"houseType\": \"in velit\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Candidate/UpdateCandidate/:candidateId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Candidate",
+										"UpdateCandidate",
+										":candidateId"
+									],
+									"variable": [
+										{
+											"key": "candidateId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/api/Candidate/:candidateId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Candidate/:candidateId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Candidate",
+								":candidateId"
+							],
+							"variable": [
+								{
+									"key": "candidateId",
+									"value": "99956971",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Candidate/:candidateId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Candidate",
+										":candidateId"
+									],
+									"variable": [
+										{
+											"key": "candidateId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": ""
+		}
+	]
+}
